@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dd.css" />
+    <title>Draggable list</title>
+  </head>
+  <body>
+    <form action="POST" id="question-form">
+      <input
+        type="text"
+        name="question"
+        id="question"
+        placeholder="Enter the question"
+      />
+    </form>
+    <div id="question-holder" class="list-container container">
+      <div class="list-item card" draggable="true" dropzone="true">
+        How are you?
+      </div>
+      <div class="list-item card" draggable="true" dropzone="true">
+        What has been up?
+      </div>
+      <div class="list-item card" draggable="true" dropzone="true">
+        How's it going?
+      </div>
+    </div>
+    <script src="dd.js"></script>
+  </body>
+</html>
